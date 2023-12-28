@@ -1,0 +1,195 @@
+
+
+body {
+font-family: bemirs, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #000;
+color: #fff;
+}
+
+header {
+text-align: center;
+padding: 1.5em;
+position: fixed;
+top: 0;
+width: 100%;
+background-color: rgba(0,0,255,0);
+color: #fff;
+z-index: 999;
+transition: padding 0.3s, height 0.4s;
+}
+
+
+
+h1{
+  font-family: bemirs, serif;
+  font-size: 5em;
+}
+
+header.scrolled {
+background-color: black;
+color: rgba(255, 0, 0, 0.5);
+padding: 1em;
+height: 50px;
+}
+
+nav {
+display: flex;
+justify-content: space-around;
+margin-top: 20px;
+}
+
+nav a {
+
+color:rgba(255, 0, 0, 0.5););
+text-decoration: none;
+padding: 10px;
+}
+
+section {
+margin-top: 80px; /* Adjusted margin-top to make space for fixed header */
+max-width: 800px;
+margin: 0 auto;
+padding: 20px;
+}
+
+section img {
+width: 100%;
+height: auto;
+display: block;
+margin-bottom: 20px;
+}
+
+.server-row {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+}
+
+.server-section {
+flex: 0 0 calc(33.33% - 20px);
+margin-bottom: 20px;
+text-align: center;
+}
+
+.server-image {
+width: 80px; /* Adjust the size as needed */
+margin-bottom: 10px;
+}
+
+footer {
+background-color: transparent;
+color: #fff;
+text-align: center;
+padding: 2em;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 600px) {
+section {
+padding: 10px;
+}
+}
+
+/* Opening Hours Dropdown */
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #333;
+color: #fff;
+padding: 10px;
+z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* Additional CSS for form layout */
+form {
+display: flex;
+flex-wrap: wrap;
+max-width: 600px; /* Adjust as needed */
+margin: 20px auto;
+}
+
+label {
+flex: 1 0 100%; /* Full width on smaller screens, wrap to the next line */
+margin-bottom: 10px;
+}
+
+input,
+textarea {
+flex: 1 0 100%; /* Full width on smaller screens, wrap to the next line */
+padding: 8px;
+margin-bottom: 15px;
+}
+
+button {
+flex: 1 0 100%; /* Full width on smaller screens, wrap to the next line */
+padding: 10px;
+background-color: #B22222; /* Brick Red */
+color: #fff;
+border: none;
+cursor: pointer;
+}
+
+#home {
+margin-top: 5em;
+}
+
+#home {
+font: bemirs;
+font-size: 25;
+background-image: url('https://www.logoai.com/img/new-preview/neon.jpg');
+background-size: cover;
+background-position: center;
+height: 600px;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.custom-text {
+    font-family: Playfair Display, serif;
+    font-size: 25px;
+}
+/* Add your other styles for the header */
+header {
+    /* Your header styles go here */
+}
+.home-button{
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3b5998; /* Facebook blue color */
+  color: #fff; /* White text color */
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/* Style for the Facebook button */
+.facebook-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #3b5998; /* Facebook blue color */
+    color: #fff; /* White text color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+/* Hover effect */
+.facebook-button:hover {
+    background-color: #2d4373; /* Darker shade on hover */
+}
+.positioned-image {
+    width: 300px; /* Set the desired width */
+    height: 100px; /* Set the desired height */
+      background-image: url('https://techlockdown.s3.us-west-2.amazonaws.com/Block_Social_Media_1e1f0383d3.png'); /* Replace with your image URL */
+    background-size: cover; /* Cover the entire container */
+    background-position:center; /* Adjust the position (top right in this example) */
+}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+</body>
+</html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.Q.W Studios - Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="JavaScript" href="script.js">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#home"class="scroll-button" target="_blank"class="home-button">Home</a>
+            <div class="dropdown">
+                <button id="openingHoursBtn">Opening Hours</button>
+                <div class="dropdown-content">
+                  <p>Monday-Friday:9:AM - 5:PM</p>
+                  <p>Saturday: 10:AM - 2:PM</p>
+                </div>
+            </div>
+            <a href="#services"class="scroll-button">Services</a>
+            <a href="#about-contact"class="scroll-button">Contact</a>
+            <a href="https://www.facebook.com/TQuietWorld" target="_blank" class="facebook-button">
+            Facebook</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
+
+    <section id="home">
+        <!-- Add four lines of space above the picture -->
+        <div style="margin-top: 4em;"></div>
+        <h1 style="color: #fff; text-align: center;">T.Q.W Studios</h1>
+        <!-- Background image -->
+        <div id="background-image"></div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+    const scrollButtons = document.querySelectorAll('.scroll-button');
+
+    scrollButtons.forEach(function(button) {
+        button.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            const targetId = button.getAttribute('href').substring(1);
+            const targetSection = document.getElementById(targetId);
+
+            if (targetSection) {
+                // Scroll smoothly to the target section
+                window.scrollTo({
+                    top: targetSection.offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+});
+
+        window.addEventListener('scroll', function () {
+            var header = document.querySelector('header');
+            var scrolled = window.scrollY > 80;
+
+            if (scrolled) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        document.getElementById('openingHoursBtn').addEventListener('click', function () {
+            // Opening hours information now appears in a dropdown
+        });
+
+        // Function to set background image dynamically
+        function setBackgroundImage(imageURL) {
+            document.getElementById('home').style.backgroundImage = `url('${imageURL}')`;
+            document.getElementById('home').style.backgroundSize = 'cover';
+            document.getElementById('home').style.backgroundPosition = 'center';
+            document.getElementById('home').style.height = '600px'; // Adjust the height as needed
+        }
+
+        // Call setBackgroundImage function with the provided image URL
+        setBackgroundImage('https://www.logoai.com/img/new-preview/neon.jpg');
+    </script>
+
+</body>
+
+<section id="services">
+        <h2>Services</h2>
+	<br><br>
+
+
+        <div class="server-row">
+            <!-- Service 1 Section 1 -->
+            <div class="server-section">
+                 <p class="custom-text">Website Design and Development.</p> Creating visually appealing and user-friendly website layouts.Developing the website using coding languages like HTML, CSS, JavaScript, and more.Ensuring the website is responsive and compatible with different devices and browsers.
+            </div>
+
+            <!-- Server Section 2 -->
+            <div class="server-section">
+                <p class="custom-text">Website Maintenance.</p>Providing ongoing support for website updates, security patches, and troubleshooting issues.
+    Implementing content updates and changes as needed.
+            </div>
+
+            <!-- Server Section 3 -->
+            <div class="server-section">
+                <p class="custom-text"></p>
+
+            </div>
+
+            <!-- Server Section 4 -->
+            <div class="server-section">
+                <p class="custom-text">Consultation and Planning</p>
+ Offering advice and guidance on overall website strategy, including goals, target audience, and features.
+	<br>
+	<br>
+            </div>
+
+            <!-- Server Section 5 -->
+            <div class="server-section">
+                <p class="custom-text">Social Media Integration</p>
+ Integrating social media elements and ensuring a seamless connection between the website and social platforms.
+            </div>
+
+            <!-- Service Section 6 -->
+            <div class="server-section">
+              <img src="https://techlockdown.s3.us-west-2.amazonaws.com/Block_Social_Media_1e1f0383d3.png" alt="Additional Service Image">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script>
+        document.getElementById('openingHoursBtn').addEventListener('click', function () {
+            // Opening hours information now appears in a dropdown
+        });
+    </script>
+
+<body>
+
+   <!-- about-contact.html -->
+<style>
+    section {
+        max-width: calc(100% - 4cm);
+        margin: 0 auto;
+        padding: 20px;
+    }
+</style>
+<br>
+<br>
+<br>
+<br>
+<section id="about-contact">
+
+
+    <h2>Contact</h2>
+    <p>Ready to bring your vision to life? Contact T.Q.W Studios for personalized services.</p>
+
+    <p>Email:<br>
+        tqw.studios@gmail.com</p>
+
+    <p>Phone:<br>
+        </p>
+
+    <p>Feel free to reach out with any inquiries, project details, or to schedule a consultation. I look forward to collaborating with you!</p>
+    <!-- Add more contact information as needed -->
+</section>
+
+<!-- about-contact.html -->
+<!DOCTYPE html>
+
+<body>
+
+    <section>
+        <!-- ... (previous content) ... -->
+
+        <!-- Form Section -->
+        <h2>Get in Touch now</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 The Quiet World Studios</p>
+    </footer>
+
+</body>
+
+<?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $name = $_POST["name"];
+    $email = $_POST["email"];
+    $message = $_POST["message"];
+
+    // Your email address
+    $to = "tqw.studios@gmail.com";
+
+    // Subject of the email
+    $subject = "New Form Submission";
+
+    // Message body
+    $body = "Name: $name\nEmail: $email\nMessage: $message";
+
+    // Additional headers
+    $headers = "From: $email";
+
+    // Send the email
+    mail($to, $subject, $body, $headers);
+}
+?>

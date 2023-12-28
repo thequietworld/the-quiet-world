@@ -188,7 +188,7 @@
 
         <!-- Form Section -->
         <h2>Get in Touch now</h2>
-        <form action="submit_form.php" method="post">
+        <form action="https://formspree.io/f/xoqgqakd" method="post">
             <label for="name">Name:</label>
             <input type="text" id="name" name="name" required>
 
@@ -208,25 +208,3 @@
 
 </body>
 
-<?php
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $name = $_POST["name"];
-    $email = $_POST["email"];
-    $message = $_POST["message"];
-
-    // Your email address
-    $to = "tqw.studios@gmail.com";
-
-    // Subject of the email
-    $subject = "New Form Submission";
-
-    // Message body
-    $body = "Name: $name\nEmail: $email\nMessage: $message";
-
-    // Additional headers
-    $headers = "From: $email";
-
-    // Send the email
-    mail($to, $subject, $body, $headers);
-}
-?>

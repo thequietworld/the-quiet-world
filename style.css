@@ -29,7 +29,7 @@ h1{
 
 header.scrolled {
 background-color: black;
-color: rgba(255, 0, 0, 0.5);
+color: rgba(255, 0, 0, 1);
 padding: 1em;
 height: 50px;
 }
@@ -42,7 +42,7 @@ margin-top: 20px;
 
 nav a {
 
-color:rgba(255, 0, 0, 0.5););
+color:rgba(255, 0, 0, 1););
 text-decoration: none;
 padding: 10px;
 }

@@ -24,7 +24,8 @@ transition: padding 0.3s, height 0.4s;
 
 h1{
   font-family: bemirs, serif;
-  font-size: 5em;
+  font-size: 6em;
+  font-weight: bold;
 }
 
 header.scrolled {

@@ -1,7 +1,7 @@
 
 
 body {
-font-family: bemirs, sans-serif;
+font-family: open, sans;
 margin: 0;
 padding: 0;
 background-color: #000;
@@ -23,7 +23,7 @@ transition: padding 0.3s, height 0.4s;
 
 
 h1{
-  font-family: sans, serif;
+  font-family: open, sans;
   font-size: 6em;
   font-weight: bold;
 }
@@ -141,7 +141,7 @@ margin-top: 5em;
 }
 
 #home {
-font: bemirs;
+font: sans;
 font-size: 25;
 background-image: url('https://www.logoai.com/img/new-preview/neon.jpg');
 background-size: cover;
